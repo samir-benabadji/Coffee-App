@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 import 'HomePage.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
+  SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+    systemNavigationBarColor: Color(0xff0c0f14),
+    statusBarColor: Color(0xff0c0f14),
+  ));
 }
 
 class MyApp extends StatelessWidget {

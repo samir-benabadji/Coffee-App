@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'DetailPage.dart';
 
 class HomePage extends StatelessWidget {
   static var screenHeight;
@@ -39,7 +40,10 @@ class HomePage extends StatelessWidget {
     rating,
   }) {
     return GestureDetector(
-      onTap: () {},
+      onTap: () {
+        Navigator.of(context)
+            .push(MaterialPageRoute(builder: (context) => DetailPage()));
+      },
       child: Container(
         width: screenWidth * 0.4 + 10,
         height: screenHeight * 0.3,
