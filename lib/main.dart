@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-
-import 'HomePage.dart';
+import 'BottomPage.dart';
 
 void main() {
   runApp(MyApp());
@@ -32,7 +31,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: HomePage(),
+      home: BottomPage(),
     );
   }
 }
